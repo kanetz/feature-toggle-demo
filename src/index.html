@@ -9,7 +9,10 @@
 </head>
 <body ng-app="myApp" ng-controller="MyController">
     <label>Input: <input class="input" type="text" name="numbers" ng-model="numbers" ng-list /></label>
-    <button ng-click="sort()">Sort</button>
+
+    <button ng-click="sort()" feature-flag="feature-sort-number-only" feature-flag-hide>Sort</button>
+    <button ng-click="sortNumbersOnly()" feature-flag="feature-sort-number-only">Sort Numbers Only</button>
+
     <p>Result: <span class="result">{{result}}</span></p>
 </body>
 </html>

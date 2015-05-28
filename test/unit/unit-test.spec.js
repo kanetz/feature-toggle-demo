@@ -14,4 +14,10 @@ describe('MyController', function() {
             expect(scope.result).toEqual('1,2,3,4,5');
         });
     });
+
+    describe('sortNumbersOnly()', function() {
+        it('should do something...', function() {
+            expect(true).toBe(true);
+        })
+    });
 });
