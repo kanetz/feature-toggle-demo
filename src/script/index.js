@@ -13,5 +13,13 @@
             });
             $scope.result = result.join(',');
         };
+
+        $scope.sortNumbersOnly = function() {
+            var numbers = $scope.numbers.map(parseFloat).filter(function(v) { return !isNaN(v); });
+            var result = numbers.sort(function (a, b) {
+                return a - b;
+            });
+            $scope.result = result.join(',');
+        };
     }]);
 })();
