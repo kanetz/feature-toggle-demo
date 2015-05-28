@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript">
+        var matched = location.search.match(/([\w-]+)=(\w+)/);
+        localStorage.setItem('featureFlags.myApp.' + matched[1], matched[2]==='on');
+    </script>
+</body>
+</html>

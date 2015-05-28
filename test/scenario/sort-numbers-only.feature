@@ -7,6 +7,6 @@ Feature: Sort numbers
 
   Scenario: Sort 5 numbers
     Given I am on the index page
-    And I turn off feature "feature-sort-number-only"
-    When I sort the numbers "5,4,3,2,1"
+    And I turn on feature "feature-sort-number-only"
+    When I sort the numbers "5,4,3,2,1,a"
     Then I should see "1,2,3,4,5" as the result

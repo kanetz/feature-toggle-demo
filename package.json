@@ -2,7 +2,7 @@
   "name": "feature-toggle-demo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/main.js",
   "scripts": {
     "ut": "karma start ./test/unit/karma.config.js --single-run",
     "st": "cucumber-js ./test/scenario/"
@@ -11,6 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "cucumber": "^0.4.9",
+    "express": "^4.12.4",
+    "express-rest": "^1.0.4",
     "http-server": "^0.8.0",
     "jasmine-core": "^2.3.4",
     "karma": "^0.12.33",

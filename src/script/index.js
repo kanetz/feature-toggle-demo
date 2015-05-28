@@ -2,7 +2,7 @@
     var myApp = angular.module('myApp', ['feature-flags']);
 
     myApp.run(['featureFlags', '$http', function(featureFlags, $http) {
-        featureFlags.set($http.get('/api/feature-toggles.json'));
+        featureFlags.set($http.get('/api/features'));
     }]);
 
     myApp.controller('MyController', ['$scope', function($scope) {

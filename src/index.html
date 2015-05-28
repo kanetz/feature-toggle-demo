@@ -3,15 +3,15 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
-    <script type="text/javascript" src="../bower_components/angular-feature-flags/dist/featureFlags.js"></script>
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="bower_components/angular-feature-flags/dist/featureFlags.js"></script>
     <script type="text/javascript" src="script/index.js"></script>
 </head>
 <body ng-app="myApp" ng-controller="MyController">
     <label>Input: <input class="input" type="text" name="numbers" ng-model="numbers" ng-list /></label>
 
-    <button ng-click="sort()" feature-flag="feature-sort-number-only" feature-flag-hide>Sort</button>
-    <button ng-click="sortNumbersOnly()" feature-flag="feature-sort-number-only">Sort Numbers Only</button>
+    <button class="sort" ng-click="sort()" feature-flag="feature-sort-number-only" feature-flag-hide>Sort</button>
+    <button class="sort" ng-click="sortNumbersOnly()" feature-flag="feature-sort-number-only">Sort Numbers Only</button>
 
     <p>Result: <span class="result">{{result}}</span></p>
 </body>
