@@ -1,5 +1,9 @@
 (function () {
-    var myApp = angular.module('myApp', []);
+    var myApp = angular.module('myApp', ['feature-flags']);
+
+    myApp.run(['featureFlags', '$http', function(featureFlags, $http) {
+        featureFlags.set($http.get('/api/feature-toggles.json'));
+    }]);
 
     myApp.controller('MyController', ['$scope', function($scope) {
         $scope.sort = function() {

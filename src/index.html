@@ -3,14 +3,13 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <script type="text/javascript" src="../bower_components/angularjs/angular.min.js"></script>
+    <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="../bower_components/angular-feature-flags/dist/featureFlags.js"></script>
     <script type="text/javascript" src="script/index.js"></script>
 </head>
 <body ng-app="myApp" ng-controller="MyController">
-    <form ng-submit="sort()">
-        <label>Input: <input class="input" type="text" name="numbers" ng-model="numbers" ng-list /></label>
-        <input type="submit" value="Sort">
-    </form>
+    <label>Input: <input class="input" type="text" name="numbers" ng-model="numbers" ng-list /></label>
+    <button ng-click="sort()">Sort</button>
     <p>Result: <span class="result">{{result}}</span></p>
 </body>
 </html>
