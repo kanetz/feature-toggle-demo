@@ -1,0 +1,22 @@
+{
+  "name": "feature-toggle-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ut": "karma start ./test/unit/karma.config.js --single-run",
+    "st": "cucumber-js ./test/scenario/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cucumber": "^0.4.9",
+    "http-server": "^0.8.0",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.12.33",
+    "karma-chrome-launcher": "^0.1.12",
+    "karma-jasmine": "^0.3.5",
+    "protractor": "^2.1.0",
+    "zombie": "^3.1.1"
+  }
+}
